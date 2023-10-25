@@ -1,0 +1,16 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "2022Assignment2:lib"
+
+    - path: "./submission"
+      component: "2022Assignment2:lib"
+
+    - path: "./app/Main.hs"
+      component: "2022Assignment2:exe:2022Assignment2-exe"
+
+    - path: "./app/Paths_2022Assignment2.hs"
+      component: "2022Assignment2:exe:2022Assignment2-exe"
+
+    - path: "./test"
+      component: "2022Assignment2:test:2022Assignment2-test"

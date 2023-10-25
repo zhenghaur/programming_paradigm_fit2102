@@ -1,0 +1,75 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           2022Assignment2
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/2022Assignment2#readme>
+homepage:       https://github.com/githubuser/2022Assignment2#readme
+bug-reports:    https://github.com/githubuser/2022Assignment2/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/2022Assignment2
+
+library
+  exposed-modules:
+      Data.Builder
+      Data.Lambda
+      Parser
+      LambdaParser
+  other-modules:
+      Paths_2022Assignment2
+  hs-source-dirs:
+      src
+      submission
+  default-extensions:
+      NamedFieldPuns
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wextra -Wno-compat-unqualified-imports
+  build-depends:
+      base >=4.7 && <5
+    , containers >=0.6 && <1
+  default-language: Haskell2010
+
+executable 2022Assignment2-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_2022Assignment2
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wextra -Wno-compat-unqualified-imports
+  build-depends:
+      2022Assignment2
+    , base >=4.7 && <5
+    , containers >=0.6 && <1
+  default-language: Haskell2010
+
+test-suite 2022Assignment2-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Watch
+      Paths_2022Assignment2
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wextra -Wno-compat-unqualified-imports
+  build-depends:
+      2022Assignment2
+    , Glob
+    , QuickCheck
+    , ansi-terminal
+    , base >=4.7 && <5
+    , containers >=0.6 && <1
+    , doctest
+    , fsnotify
+  default-language: Haskell2010
